@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miras: Tarihle Konuş</title>
+    <meta name="description" content="Türk tarihindeki önemli liderleri temsilî sohbet ekranlarıyla tanıtan kural tabanlı eğitim uygulaması.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/Logo.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Ana Sayfa (Lider Seçimi) -->
+        <div id="home-view" class="view active">
+            
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./images/Logo.png" alt="Miras Logo" class="logo-img">
+                    <span class="logo-text">Miras</span>
+                </div>
+                <ul class="nav-links">
+                    <li class="active"><a href="#">Ana Sayfa</a></li>
+                    <li><a href="#leaders">Liderler</a></li>
+                    <li><a href="#">Nasıl Çalışır?</a></li>
+                    <li><a href="#">Hakkında</a></li>
+                </ul>
+                <a href="#" class="github-btn">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    GitHub
+                </a>
+            </nav>
+
+            <header class="hero-section">
+                <div class="hero-content">
+                    <img src="./images/Logo.png" alt="Miras" class="hero-logo">
+                    <h1 class="hero-title">Miras</h1>
+                    <h2 class="hero-subtitle">Tarihle Konuş</h2>
+                    <p class="hero-desc">Türk tarihindeki önemli liderleri<br>kaynaklı ve temsilî sohbetlerle tanıyın.</p>
+                    
+                    <div class="info-box">
+                        <div class="info-icon">i</div>
+                        <div class="info-text">
+                            <strong>Bu uygulama yapay zekâ değildir.</strong>
+                            <span>Cevaplar eğitim amaçlı, temsilî ve kaynak temelli hazır içeriklerden oluşur.</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section id="leaders" class="leaders-section">
+                <div class="leaders-section-header">
+                    <h2 class="section-title">Tarihî Liderler</h2>
+                    <p class="section-subtitle">Bir lider seçin ve sohbete başlayın</p>
+                </div>
+                <div class="leaders-container" id="leaders-container">
+                    <!-- Lider kartları buraya JS ile eklenecek -->
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Kaynak Temelli</h4>
+                            <p>Tarihî kaynaklara dayalı<br>güvenilir içerikler.</p>
+                        </div>
+                    </div>
+                    <div class="feature-divider"></div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Eğitim Odaklı</h4>
+                            <p>Öğrenmeyi destekleyen<br>nitelikli sohbet deneyimi.</p>
+                        </div>
+                    </div>
+                    <div class="feature-divider"></div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Millî ve Evrensel</h4>
+                            <p>Geçmişten ilham alarak<br>geleceğe bakış.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">© 2024 Miras. Tüm hakları saklıdır.</div>
+                    <div class="footer-logo">
+                        <img src="./images/Logo.png" alt="Miras" class="footer-logo-img">
+                    </div>
+                    <div class="footer-github">Bu site açık kaynaklıdır. <span>GitHub'da star verin!</span></div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Sohbet Ekranı -->
+        <div id="chat-view" class="view hidden">
+            <header class="chat-header">
+                <button id="back-btn" class="back-btn" aria-label="Geri Dön">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                </button>
+                <div class="chat-header-info">
+                    <div class="chat-avatar" id="chat-avatar"></div>
+                    <div class="chat-title">
+                        <h2 id="chat-leader-name"></h2>
+                        <span class="online-status">Çevrimiçi</span>
+                    </div>
+                </div>
+                <img src="./images/Logo.png" alt="Miras" class="chat-header-logo">
+            </header>
+
+            <!-- Konuşma Avatarı Paneli -->
+            <div class="speaking-panel" id="speaking-panel">
+                <div class="speaking-avatar-container">
+                    <div class="speaking-glow"></div>
+                    <div class="speaking-avatar" id="speaking-avatar"></div>
+                    <div class="speaking-ring"></div>
+                </div>
+                <div class="speaking-info">
+                    <span class="speaking-name" id="speaking-name"></span>
+                    <div class="audio-waves" id="audio-waves">
+                        <span class="wave-bar"></span>
+                        <span class="wave-bar"></span>
+                        <span class="wave-bar"></span>
+                        <span class="wave-bar"></span>
+                        <span class="wave-bar"></span>
+                        <span class="wave-bar"></span>
+                        <span class="wave-bar"></span>
+                    </div>
+                    <span class="speaking-label">Konuşuyor...</span>
+                </div>
+            </div>
+
+            <main class="chat-messages" id="chat-messages">
+                <!-- Mesajlar buraya eklenecek -->
+            </main>
+
+            <footer class="chat-input-area">
+                <button id="mic-btn" aria-label="Sesli Yazdır" title="Sesi Metne Çevir">
+                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                </button>
+                <input type="text" id="message-input" placeholder="Bir mesaj yazın veya mikrofonu kullanın..." autocomplete="off">
+                <button id="send-btn" aria-label="Gönder">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./audioMap.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
